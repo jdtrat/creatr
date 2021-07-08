@@ -1,0 +1,22 @@
+Package: creatr
+Title: Parse and Process Creativity Task Data
+Version: 0.0.0.9000
+Authors@R: 
+    c(
+    person(given = "Jonathan",
+           family = "Trattner",
+           role = c("aut", "cre"),
+           email = "jdt@jdtrat.com",
+           comment = c(ORCID = "0000-0002-1097-7603")),
+    person(given = "Hannah",
+           family = "Yoder",
+           role = "aut")
+           )
+Description: Includes functions for parsing and processing the 
+  creativity task used by the Kishida Lab.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Language: es
+LazyData: true
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.1.1.9000
