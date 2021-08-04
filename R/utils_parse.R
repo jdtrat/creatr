@@ -25,8 +25,10 @@ get_exit_questions <- function(.data) {
     dplyr::slice_head(n = 1) %>%
     dplyr::pull(row)
 
+  n_rows <- nrow(.data)
+
   .data %>%
-    dplyr::slice(exit_question_start:nrow(.data))
+    dplyr::slice(exit_question_start:n_rows)
 
 }
 
