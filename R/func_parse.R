@@ -42,7 +42,7 @@ parse_init <- function(.data) {
                     fill = "right") %>%
     # Drop all the meta columns
     dplyr::select(-contains("name_")) %>%
-    # Remove commaas from the keypress column
+    # Remove commas from the keypress column
     dplyr::mutate(keypress = stringr::str_remove(keypress, "\\,")) %>%
     # Remove rows where they pressed keys that are not letters/numbers
     dplyr::filter(keypress %in% c(as.character(seq(0,9)), letters, LETTERS))
