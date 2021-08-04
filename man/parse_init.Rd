@@ -7,7 +7,7 @@
 parse_init(.data)
 }
 \arguments{
-\item{.data}{}
+\item{.data}{CRT Data processed by \code{\link{read_crt()}}.}
 }
 \value{
 It returns a data frame with the following columns:

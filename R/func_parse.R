@@ -4,7 +4,7 @@
 #' This function accepts the data output from \code{\link{read_crt()}} and
 #' parses it for the initial values.
 #'
-#' @param .data
+#' @param .data CRT Data processed by \code{\link{read_crt()}}.
 #'
 #' @return It returns a data frame with the following columns:
 #' \itemize{
@@ -47,3 +47,5 @@ parse_init <- function(.data) {
     # Remove rows where they pressed keys that are not letters/numbers
     dplyr::filter(keypress %in% c(as.character(seq(0,9)), letters, LETTERS))
 }
+
+
