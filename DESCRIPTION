@@ -23,4 +23,8 @@ RoxygenNote: 7.1.1.9000
 Depends: 
     R (>= 2.10)
 Imports: 
-    readr
+    dplyr,
+    tidyr,
+    readr,
+    stringr,
+    magrittr
