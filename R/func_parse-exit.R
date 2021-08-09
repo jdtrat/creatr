@@ -1,4 +1,14 @@
 
+#' Parse Familia
+#'
+#'
+#' Add description ;aksdj;as
+#' @inheritParams get_exit_data
+#'
+#' @return What do you expect to return? Data frame containing ...
+#' @export
+#'
+#' @examples
 parse_familiarity <- function(.data) {
 
   # Get answer to "how familiar are you with the following objects?"
@@ -22,6 +32,14 @@ parse_familiarity <- function(.data) {
                         values_to = "familiarity_score")
 }
 
+#' Title
+#'
+#' @inheritParams get_exit_data
+#'
+#' @return
+#' @export
+#'
+#' @examples
 parse_aut <- function(.data) {
 
   # Get answer to "have you heard of or completed the AUT?"
@@ -32,6 +50,14 @@ parse_aut <- function(.data) {
 
 }
 
+#' Title
+#'
+#' @inheritParams get_exit_data
+#'
+#' @return
+#' @export
+#'
+#' @examples
 parse_creativity_def <- function(.data) {
 
   # Get answer to creativity definition
